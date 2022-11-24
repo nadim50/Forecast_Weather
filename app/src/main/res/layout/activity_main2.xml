@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/three_color_curved"
+    android:layout_margin="2dp"
     android:orientation="vertical"
     tools:context=".MainActivity2">
 
@@ -75,8 +76,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:lottie_rawRes="@raw/sunrise"
+                
                 app:lottie_autoPlay="true"
-                android:padding="30dp"
                 app:lottie_loop="true"/>
 
         </LinearLayout>
@@ -94,7 +95,6 @@
                 android:layout_height="wrap_content"
                 app:lottie_rawRes="@raw/sunset"
                 app:lottie_autoPlay="true"
-                android:padding="30dp"
                 app:lottie_loop="true"/>
 
 
