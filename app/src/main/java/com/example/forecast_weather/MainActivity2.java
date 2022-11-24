@@ -78,15 +78,45 @@ public class MainActivity2 extends AppCompatActivity {
         p3=findViewById(R.id.p3);
         p4=findViewById(R.id.p4);
         btn=findViewById(R.id.btn);
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+               p1.setVisibility(view.GONE);
+            }
+        });
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                p2.setVisibility(view.GONE);
+            }
+        });
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                p3.setVisibility(view.GONE);
+            }
+        });
+
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                p4.setVisibility(view.GONE);
+            }
+        });
+
+
+
     }
 
-    btn.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
 
-
-        }
-    });
 
 
 
