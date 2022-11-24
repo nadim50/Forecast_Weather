@@ -57,6 +57,72 @@
         android:gravity="center"
         />
 
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:weightSum="20"
+       >
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="10"
+           android:text="24°C "
+           android:textSize="50dp"
+           android:visibility="visible"
+           android:textAlignment="center"
+           android:layout_gravity="center"
+           android:layout_marginBottom="35dp"
+           />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="10"
+           android:text=" 1012.0hpa"
+           android:textSize="50dp"
+           android:visibility="visible"
+           android:textAlignment="center"
+           android:layout_gravity="center"
+           android:layout_marginBottom="35dp"
+           />
+   </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="20"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:text="Temperature"
+            android:textSize="30dp"
+            android:visibility="visible"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="35dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:text="Pressure"
+            android:textSize="30dp"
+            android:visibility="visible"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="35dp"
+            />
+    </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -69,25 +135,28 @@
             android:layout_width="wrap_content"
             android:layout_height="100dp"
             android:orientation="vertical"
-            android:layout_weight="10"
+            android:layout_weight="20"
             >
 
             <com.airbnb.lottie.LottieAnimationView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:lottie_rawRes="@raw/sunrise"
-                
+
                 app:lottie_autoPlay="true"
                 app:lottie_loop="true"/>
 
         </LinearLayout>
 
 
+
+
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="100dp"
             android:orientation="vertical"
-            android:layout_weight="10"
+            android:layout_weight="8"
             >
 
             <com.airbnb.lottie.LottieAnimationView
@@ -104,5 +173,30 @@
     </LinearLayout>
 
 
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sunrise"
+        android:textSize="50dp"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sunset"
+        android:textSize="50dp"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        />
+</LinearLayout>
 
 </LinearLayout>
